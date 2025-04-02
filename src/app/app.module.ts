@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { CentralComponent } from './central/central.component';
 import { ServicesComponent } from './services/services.component';
 import { AboutComponent } from './about/about.component';
+import { FormsModule } from '@angular/forms';
 
 
 const routes : Routes = [
@@ -28,7 +29,8 @@ const routes : Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-central',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./central.component.scss']
 })
 export class CentralComponent {
+
 
 }
