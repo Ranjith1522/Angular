@@ -9,6 +9,7 @@ import { CentralComponent } from './central/central.component';
 import { ServicesComponent } from './services/services.component';
 import { AboutComponent } from './about/about.component';
 import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http'
 
 
 const routes : Routes = [
@@ -30,7 +31,8 @@ const routes : Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
