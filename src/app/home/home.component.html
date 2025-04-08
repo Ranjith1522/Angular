@@ -1,28 +1,23 @@
-<h3>E-paper</h3>
+
 <div class="outer-container">
-    <div class="row">
-       <div class="col-4">
-        Title
-       </div>
-       <div class="col-4">
-        Product-ID
-       </div>
-       <div class="col-4">
-        $-Price
-       </div>
-    </div>
+    <h3>E-paper</h3>
 
     <div *ngFor="let dist of Basedata" class="list">
         <div class="row">
            <div class="col-4">
-            {{dist.title}}
+            {{dist.category}}
            </div>
            <div class="col-4">
             {{dist.id}}
            </div>
            <div class="col-4">
-            {{dist.price}}
+            <p>${{dist.price}}</p>
            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                {{dist.title}}
+            </div>
         </div>
     </div>
 </div>
