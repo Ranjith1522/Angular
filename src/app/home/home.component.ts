@@ -9,6 +9,7 @@ import { OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   url :any;
+  Basedata:any;
 
   constructor(private http : HttpClient) {
 
@@ -21,7 +22,7 @@ export class HomeComponent implements OnInit {
   getData() {
     this.http.get("https://fakestoreapi.com/products").subscribe((data)=>{
       console.log(data);
-      const Basedata = data;
+      this.Basedata = data;
     })
   }
 }

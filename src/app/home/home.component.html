@@ -2,16 +2,27 @@
 <div class="outer-container">
     <div class="row">
        <div class="col-4">
-        one of three columns
+        Title
        </div>
        <div class="col-4">
-        one of three columns
+        Product-ID
        </div>
        <div class="col-4">
-        one of three columns
+        $-Price
        </div>
     </div>
 
-    <div *ngFor="let dist in Basedata">
+    <div *ngFor="let dist of Basedata" class="list">
+        <div class="row">
+           <div class="col-4">
+            {{dist.title}}
+           </div>
+           <div class="col-4">
+            {{dist.id}}
+           </div>
+           <div class="col-4">
+            {{dist.price}}
+           </div>
+        </div>
     </div>
 </div>
