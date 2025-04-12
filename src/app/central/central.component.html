@@ -2,18 +2,22 @@
     <div class="outer">
     <div class="row sm-3">
        <label class="col-3">Enter email</label>
-       <input class="col-4" type="email"><br>
+       <input class="col-4" type="email" [(ngModel)]="email"><br>
     </div>
     <div class="row sm-3">
       <label class="col-3">Enter Name</label>
-      <input class="col-4" type="text">
+      <input class="col-4" type="text" [(ngModel)]="name">
     </div>
     <div class="row sm-3">
         <label class="col-3">DOB</label>
-        <input class="col-4" type="date">
+        <input class="col-4" type="date" >
     </div>
     <div>
         <button type="submit"class="btn btn-primary">Submit</button>
     </div>
   </div>
 </form>
+
+<div>
+  <p>{{email}}</p>
+</div>

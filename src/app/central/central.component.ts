@@ -8,5 +8,8 @@ import { FormsModule } from '@angular/forms';
 })
 export class CentralComponent {
 
+  email : string='';
+  name :string='';
+  date = new Date;
 
 }
