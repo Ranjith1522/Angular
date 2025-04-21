@@ -8,8 +8,10 @@ import { FormsModule } from '@angular/forms';
 })
 export class CentralComponent {
 
-  email : string='';
-  name :string='';
-  date = new Date;
+  
+  onSubmit(data:any) {
+    console.log("Form Submitted",data.value);
+    console.log("VALID",data.valid);
+  }
 
 }
